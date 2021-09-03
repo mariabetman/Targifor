@@ -1,0 +1,25 @@
+.header
+{
+    &__listS
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 216px;
+        height: 61px;
+        position: absolute;
+        top: 35px;
+        right: 11px;
+    }
+
+    &__itemS
+    {
+        display: inline-block;
+        padding: 0.2em;
+
+        &:last-child
+        {
+            padding-right: 0;
+        }
+    }
+}

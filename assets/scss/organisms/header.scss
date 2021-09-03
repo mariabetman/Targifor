@@ -1,0 +1,153 @@
+.header
+{
+    width: 100%;
+    height: 99px;
+
+    &__detail
+    {
+        display: flex;
+        align-items: center;
+        height: 33px;
+        position: relative;
+        border-bottom: 1px solid #CFD5DB; 
+    }
+
+    &__logoS
+    {
+        width: 138px;
+        height: 36px;
+        position: absolute;
+        right: 1em;
+    }
+
+    &__main
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 79px;
+        position: relative;
+    }
+
+    &__logoT
+    {
+        width: 175px;
+        height: 69px;
+        position: relative;
+        left: 0.7em;
+    }
+
+    &__style1
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        height: 47.5px;
+        background-color: $color_dark_orange;
+        border-radius: 6px;
+    }
+
+    &__style2
+    {
+        width: 37.5px;
+        height: 4px;
+        background-color: $color_white;
+        border-radius: 20px;
+
+        &::before
+        {
+            content: "";
+            display: block;
+            @extend .header__style2;
+            margin-bottom: 0.1em;
+        }
+
+        &::after
+        {
+            content: "";
+            display: block;
+            @extend .header__style2;
+            margin-top: 0.1em;
+        }
+    }
+
+    &__nav
+    {
+        display: none;
+    }
+
+    &__social
+    {
+        display: none;
+    }
+}
+
+@media (min-width: 1010px)
+{
+    .header
+    {
+        height: 244px;
+
+        &__detail
+        {
+            align-items: flex-start;
+            height: 38px;
+        }
+
+        &__logoS
+        {
+            width: 138px;
+            height: 36px;
+            padding: 6px;
+            right: 11px;
+        }
+
+        &__main
+        {
+            justify-content: space-between;
+            align-items: flex-start;
+            height: 206px;
+        }
+
+         &__logoT
+        {
+            width: 215px;
+            height: 69px;
+            top: 27px;
+            left: 34px;
+        }
+
+        &__style1
+        {
+        }
+
+        &__style2
+        {
+            width: 100%;
+            height: 100%;
+            border-radius: 0;
+
+            &::before
+            {
+                display: none;
+            }
+
+            &::after
+            {
+                display: none;
+            }
+        }
+
+        &__nav
+        {
+            display: block;
+        }
+
+        &__social
+        {
+            display: block;
+        }
+    }
+}
