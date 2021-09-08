@@ -6,20 +6,32 @@
         justify-content: center;
         align-items: center;
         width: 216px;
-        height: 61px;
-        position: absolute;
-        top: 35px;
-        right: 11px;
+        height: 123px;
+    }
+
+    &__tittleS
+    {
+        font-size: 16px;
+        font-weight: 700;
+        color: $color_follow_blue;
+        letter-spacing: -0.5px;
     }
 
     &__itemS
     {
-        display: inline-block;
+        display: flex;
+        align-items: center;
+        font-size: 12px;
         padding: 0.2em;
 
         &:last-child
         {
             padding-right: 0;
         }
+    }
+
+    &__imageS
+    {
+        opacity: 0.4;
     }
 }
