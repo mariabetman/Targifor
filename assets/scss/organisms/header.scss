@@ -1,7 +1,7 @@
 .header
 {
     width: 100%;
-    height: 99px;
+    height: 112px;
     font-family: 'Montserrat', sans-serif;
 
     @media (min-width: 1010px)
@@ -56,18 +56,17 @@
     }
 
     &__logoT
-    {
+    {   
         width: 175px;
         height: 69px;
-        position: relative;
-        left: 0.7em;
+        margin-left: 0.7em;
 
         @media (min-width: 1010px)
         {
             width: 215px;
             height: 69px;
-            top: 27px;
-            left: 34px;
+            margin-top: 27px;
+            margin-left: 34px;
         }
     }
 
