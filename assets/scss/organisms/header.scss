@@ -57,18 +57,17 @@
     }
 
     &__logoT
-    {
+    {   
         width: 175px;
         height: 69px;
-        position: relative;
-        left: 0.7em;
+        margin-left: 0.7em;
 
         @media (min-width: 1010px)
         {
             width: 215px;
             height: 69px;
-            top: 27px;
-            left: 34px;
+            margin-top: 27px;
+            margin-left: 34px;
         }
     }
 
@@ -84,6 +83,11 @@
         background-color: $color_dark_orange;
         border-radius: 6px;
 
+        @media (min-width: 1010px)
+        {
+            display: none;
+        }
+
         &::before
         {
             content: "";
@@ -94,6 +98,11 @@
             border-radius: 10em;
             position: relative;
             bottom: 0.15em;
+
+            @media (min-width: 1010px)
+            {
+                display: none;
+            }
         }
 
         &::after
@@ -106,6 +115,11 @@
             border-radius: 10em;
             position: relative;
             top: 0.15em;
+
+            @media (min-width: 1010px)
+            {
+                display: none;
+            }
         }
     }
 
@@ -115,6 +129,11 @@
         height: 3px;
         background-color: $color_white;
         border-radius: 10em;
+
+        @media (min-width: 1010px)
+        {
+            display: none;
+        }
     }
 
     &__nav
