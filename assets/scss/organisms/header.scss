@@ -46,7 +46,6 @@
         justify-content: space-between;
         align-items: center;
         height: 79px;
-        position: relative;
 
         @media (min-width: 1010px)
         {
@@ -84,6 +83,11 @@
         background-color: $color_dark_orange;
         border-radius: 6px;
 
+        @media (min-width: 1010px)
+        {
+            display: none;
+        }
+
         &::before
         {
             content: "";
@@ -94,6 +98,11 @@
             border-radius: 10em;
             position: relative;
             bottom: 0.15em;
+
+            @media (min-width: 1010px)
+            {
+                display: none;
+            }
         }
 
         &::after
@@ -106,6 +115,11 @@
             border-radius: 10em;
             position: relative;
             top: 0.15em;
+
+            @media (min-width: 1010px)
+            {
+                display: none;
+            }
         }
     }
 
@@ -115,6 +129,11 @@
         height: 3px;
         background-color: $color_white;
         border-radius: 10em;
+
+        @media (min-width: 1010px)
+        {
+            display: none;
+        }
     }
 
     &__nav
