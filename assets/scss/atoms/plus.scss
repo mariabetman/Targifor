@@ -1,11 +1,25 @@
 .plus
 {
-    width: 38px;
-    height: 46px;
+    display: inline-block;
+    width: 23px;
+    height: 27px;
+
+    @media (min-width: 1010px)
+    {
+        width: 38px;
+        height: 46px;
+    }
 
     &__big
     {
+        display: inline-block;
+        width: 44px;
+        height: 47px;
+
+        @media (min-width: 1010px)
+    {
         width: 115px;
         height: 112px;
+    }
     }
 }
