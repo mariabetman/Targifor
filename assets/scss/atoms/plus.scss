@@ -6,8 +6,10 @@
 
     @media (min-width: 1010px)
     {
-        width: 38px;
-        height: 38px;
+        width: 3vw;
+        height: 3vw;
+        max-width: 38px;
+        max-height: 38px;
     }
 
     &__big
