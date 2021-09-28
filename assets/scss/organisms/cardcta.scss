@@ -1,0 +1,38 @@
+.cardcta
+{
+    position: relative;
+    margin-top: 92px;
+
+    &__label
+    {
+        position: absolute;
+        top: -32px;
+        right: 6vw;
+    }
+
+    &__adjustment
+    {
+        transform: skewX(20deg);
+        display: flex;
+        justify-content: space-between;
+        font-size: .7em;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    &__plus
+    {
+        margin: 0 8px;
+    }
+
+    &__tittle
+    {
+        display: flex;
+
+    }
+
+    &__logo
+    {
+        width: 60%;
+    }
+}

@@ -8,4 +8,11 @@
         color: $color_white;
         border-radius: 5px;
     }
+
+    &__cardcta
+    {
+        display: flex;
+        padding: 6.5px 10px;
+        border-radius: 3px;
+    }
 }
