@@ -1,0 +1,77 @@
+.faq
+{
+    width: 100%;
+    margin: 93px 0 60px 0;
+
+    @media (min-width: 1010px)
+    {
+        margin: 140px 0;
+    }
+
+    &__tittle
+    {
+        color: $color_label_blueD;
+        text-transform: uppercase;
+        font-size: 36px;
+        letter-spacing: 0;
+        line-height: 42px;
+        text-align: left;
+        padding: 0 1em 0 .5em;
+
+        @media (min-width: 1010px)
+        {
+            font-size: 60px;
+            line-height: 70px;
+            padding: 0 0 0 2em;
+        }
+    }
+
+    &__flex
+    {
+        @media (min-width: 1010px) 
+        {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    }
+
+    &__card
+    {
+        width: 70%;
+        margin: 40px 2em 0 3em;
+
+        @media (min-width: 1010px) 
+        {
+            width: 30%;
+            margin: 80px 2em 0 7em;;
+        }
+    }
+
+    &__border
+    {
+        border-left: 3px solid $color_dark_orange;
+        padding-left: 1.5em;
+    }
+
+    &__cardT
+    {
+        color: $color_follow_blue;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 26px;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    &__cardTxt
+    {
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 26px;
+        text-align: left;
+    }
+}

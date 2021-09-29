@@ -24,4 +24,24 @@
         height: 26px;
         margin-right: 20px;
     }
+
+    &__faq
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 75%;
+        color: $color_white;
+        font-size: 20px;
+        letter-spacing: 0;
+        text-transform: uppercase;
+        padding: .5em 0 .5em 0;
+        margin: 50px auto 60px;
+
+        @media (min-width: 1010px) 
+        {
+            width: 85%;
+            margin: 86px auto 140px;
+        }
+    }
 }
