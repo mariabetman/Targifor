@@ -11,7 +11,7 @@
         text-transform: uppercase;
         letter-spacing: 0;
         line-height: 42px;
-        padding: 0 5em 0 .25em;
+        padding: 0 5em 0 4vw;
     }
 
     &__card
@@ -20,7 +20,23 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        padding: 40px 24px 62px 26px;
+        padding: 40px 24px 62px 7.5vw;
+        position: relative;
+
+        &::after
+        {
+            content: ">";
+            display: inline-block;
+            font-size: 5em;
+            font-weight: 300;
+            color: $color_arrow_orange;
+            transform: rotate(90deg);
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
     }
 
     &__textN
