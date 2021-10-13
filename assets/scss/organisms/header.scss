@@ -26,15 +26,13 @@
     &__logoS
     {
         width: 5em;
-        height: 75%;
+        height: 100%;
         position: absolute;
         right: 1em;
 
         @media (min-width: 1010px)
         {
             width: 138px;
-            height: 36px;
-            padding: 6px;
             right: 11px;
         }
     }
