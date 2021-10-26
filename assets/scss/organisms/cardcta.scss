@@ -1,34 +1,79 @@
 .cardcta
 {
     width: 100%;
-    margin: 92px 0 60px 0;
+    margin: 0 0 60px 0;
+    overflow: hidden;
 
     @media (min-width: 1010px)
     {
-        margin: 206px 0 210px 0;
+        margin: 0 0 210px 0;
     }
 
     &__card1, &__card2
     {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
         width: 92.5%;
-        height: 533px;
+        height: auto;
         border-radius: 11px;
+        padding: 28px 0 40px;
         margin: auto;
+        position: relative;
+
+        @media (min-width: 1010px)
+        {
+            width: 60%;
+            height: 255px;
+            transform: skewX(-20deg);
+            padding: 0;
+            right: -5em;
+        }
     }
 
     &__card1
     {
         background-color: $color_light_orange;
+
+        @media (min-width: 1010px)
+        {
+            margin-top: 206px;
+        }
     }
 
     &__card2
     {
         background-color: $color_carcta_blue;
         margin-top: 68px;
+
+        @media (min-width: 1010px)
+        {
+            margin-top: 137px;
+        }
+    }
+
+    &__adjustment1
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @media (min-width: 1010px)
+        {
+            transform: skewX(20deg);
+            flex-direction: row;
+        }
+    }
+
+    &__adjustment2
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @media (min-width: 1010px)
+        {
+            height: 255px;
+        }
     }
 
     &__label
@@ -40,10 +85,16 @@
         font-weight: 600;
         font-size: .8em;
         color: $color_white;
-        padding: .6em 1em;
-        position: relative;
-        top: -43px;
-        right: -2em;
+        padding: .6em .75em;
+        position: absolute;
+        top: -40px;
+        right: .5em;
+
+        @media (min-width: 1010px)
+        {
+            top: -67.5px;
+            right: -5em;
+        }
     }
 
     &__adjustment
@@ -56,13 +107,13 @@
 
     &__plusL
     {
-        width: 1.5em;
-        margin: 0 .8em ;
+        width: 1.25em;
+        margin: 0 .6em ;
     }
 
     &__textL
     {
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     &__tittle
@@ -81,26 +132,52 @@
     &__text
     {
         text-transform: uppercase;
-        font-size: 1em;
+        font-size: .9em;
         font-weight: 600;
         color: $color_textC_blue;
     }
 
     &__plus
     {
-        margin: 0 1em;
+        margin: 0 .8em;
         color: $color_textC_blue;
     }
 
     &__logo
     {
-        width: 65%;
-        height: 2.5em;
+        width: 60%;
+        height: auto;
+        margin: 20px 0 29px;
+
+        @media (min-width: 1010px)
+        {
+            width: 12.5em;
+        }
     }
 
     &__image
     {
         width: 90%;
-        height: 12.5em;
+        height: auto;
+        position: relative;
+        left: -2.5em;
+        margin-bottom: 34px;
+
+        @media (min-width: 1010px)
+        {
+            width: 20em;
+            top: -175px;
+            left: -30em;
+        }
+    }
+
+    &__button
+    {
+        @media (min-width: 1010px)
+        {
+            position: absolute;
+            bottom: 40px;
+            width: 30%;
+        }
     }
 }
