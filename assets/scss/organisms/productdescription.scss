@@ -71,6 +71,11 @@
         letter-spacing: 0;
         line-height: 30px;
 
+        @media (min-width: 1010px)
+        {
+            
+        }
+
         &-bold
         {
             @extend .pd__text;
@@ -83,8 +88,7 @@
             @extend .pd__text;
             font-size: 16px;
         }
-
-       
+    }
 
     &__tittle2
     {
