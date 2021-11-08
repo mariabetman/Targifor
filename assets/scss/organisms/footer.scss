@@ -1,0 +1,155 @@
+.footer
+{
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(to bottom right, $color_footer_blueL1 50%, $color_footer_blueD1 55%);
+
+    &__detail
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color_footer_orange;
+        padding: 2em 5em;
+
+        @media (min-width: 1010px)
+        {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 2em 5em; 
+        }
+    }
+
+    &__tittleD
+    {
+        display: inline-block;
+        font-size: .95em;
+        font-weight: 500;
+        color: $color_white;
+        margin-right: .5em;
+    }
+
+    &__listD
+    {
+        list-style-type: decimal;
+        list-style-position: inside;
+    }
+
+    &__itemD
+    {
+        font-size: 1em;
+        color: $color_white;
+    }
+
+    &__head
+    {
+        height: 25px;
+    }
+
+    &__infoH
+    {
+        display: none;
+        width: 65%;
+    }
+
+    &__grid11
+    {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1.5em 0;
+    }
+
+    &__item11
+    {
+        color: $color_white;
+        font-size: .9em;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    
+    &__divH
+    {
+        display: none;
+    }
+
+    &__main
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to bottom right, $color_footer_blueL2, $color_footer_blueD2);
+        padding: 3em 2em;
+    }
+
+    &__info
+    {
+        
+    }
+
+    &__item12
+    {
+        color: $color_footer_blueF;
+        font-weight: 600;
+        text-transform: uppercase;
+        background-color: $color_white;
+        padding: .5em;
+        border: 2px solid $color_footer_blueF;
+        margin-bottom: 15px;
+    }
+
+    &__text
+    {
+        font-size: .75em;
+        font-weight: 600;
+        color: $color_footer_blueF;
+        text-transform: uppercase;
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    &__grid
+    {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 4fr;
+        margin-bottom: 35px;
+    }
+
+    &__item1, &__item2, &__item3, &__item4
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1em .5em;
+        border: .5px solid $color_white;
+    }
+
+    &__item2
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    &__icon
+    {
+        width: 3em;
+    }
+
+    &__textC
+    {
+        color: $color_white;
+        font-weight: 400;
+
+        &-bold
+        {
+            @extend .footer__textC;
+            font-size: 2em;
+            font-weight: 600;
+        }
+    }
+}
