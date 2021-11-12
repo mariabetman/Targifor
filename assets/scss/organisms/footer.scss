@@ -2,7 +2,12 @@
 {
     width: 100%;
     height: auto;
-    background-image: linear-gradient(to bottom right, $color_footer_blueL1 50%, $color_footer_blueD1 55%);
+    background-image: linear-gradient(to bottom right, $color_footer_blueL1 30%, $color_footer_blueD1 35%);
+
+    @media (min-width: 1010px)
+    {
+        background-image: linear-gradient(125deg , $color_footer_blueL1 45%, $color_footer_blueD1 55%);
+    } 
 
     &__detail
     {
@@ -10,13 +15,12 @@
         justify-content: center;
         align-items: center;
         background-color: $color_footer_orange;
-        padding: 2em 5em;
+        padding: 2em 5vw;
 
         @media (min-width: 1010px)
         {
             flex-direction: column;
             align-items: flex-start;
-            padding: 2em 5em; 
         }
     }
 
@@ -41,23 +45,55 @@
         color: $color_white;
     }
 
-    &__head
+    &__main
     {
-        height: 25px;
+       display: flex;
+       flex-direction: column;
     }
 
-    &__infoH
+    &__headM
+    {
+        height: 25px;
+
+        @media (min-width: 1010px)
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: auto;
+        }
+    }
+
+    &__headI
     {
         display: none;
-        width: 65%;
+
+        @media (min-width: 1010px)
+        {
+            display: block;
+            width: 60%;
+            border-right: 1.5px solid $color_white;
+            background-color: transparent;
+        }
+    }
+
+    &__headA
+    {
+        display: none;
     }
 
     &__grid11
     {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-        padding: 1.5em 0;
+        padding: 1.5em 5vw;
+    }
+
+    &__adjustment11
+    {
+        display: flex;
+        align-items: center;
     }
 
     &__item11
@@ -66,28 +102,83 @@
         font-size: .9em;
         font-weight: 400;
         text-transform: uppercase;
+        position: relative;
     }
 
-    
-    &__divH
-    {
-        display: none;
-    }
-
-    &__main
+    &__contentM
     {
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-        background-image: linear-gradient(to bottom right, $color_footer_blueL2, $color_footer_blueD2);
-        padding: 3em 2em;
+        background-color: #76c8ee;
+        padding: 3em 7.5vw;
+
+        @media (min-width: 1010px)
+        {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            background-image: linear-gradient(125deg , $color_footer_blueL2 40%, $color_footer_blueD2 60%);
+            padding: 0;
+        }
     }
 
     &__info
     {
-        
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        @media (min-width: 1010px)
+       {
+           display: flex;
+           flex-direction: column;
+           align-items: flex-start;
+           justify-content: flex-start;
+           width: 60%;
+           height: 100%;
+           border-right: 1.5px solid $color_white;
+       } 
     }
+
+    &__address
+    {
+        width: 100%;
+
+        @media (min-width: 1010px)
+        {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+            width: 45%;
+            padding: 3em 5vw 3em 7.5vw;
+        }
+    }
+
+    &__adjustmentTC
+    {
+        display: flex;
+        align-items: center;
+    }
+
+    &__tittleC
+    {
+        color: $color_white;
+        font-size: .9em;
+        font-weight: 400;
+        text-transform: uppercase;
+
+        &-bold
+        {
+            color: $color_white;
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-right: .4em;
+        }
+    }
+
+
 
     &__item12
     {
@@ -108,6 +199,11 @@
         text-transform: uppercase;
         margin-top: 25px;
         text-align: center;
+
+        @media (min-width: 1010px)
+        {
+            text-align: left;
+        }
     }
 
     &__grid
@@ -116,6 +212,11 @@
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 4fr;
         margin-bottom: 35px;
+
+        @media (min-width: 1010px)
+        {
+            margin: 0;
+        }
     }
 
     &__item1, &__item2, &__item3, &__item4
@@ -150,6 +251,21 @@
             @extend .footer__textC;
             font-size: 2em;
             font-weight: 600;
+        }
+    }
+
+    &__footer
+    {
+        background-color: #3170ae;
+        font-size: 16px;
+        color: $color_white;
+        text-align: center;
+        padding: 2em .25em;
+
+        @media (min-width: 1010px)
+        {
+            background-color: transparent;
+            padding: 1.5em .5em;
         }
     }
 }
