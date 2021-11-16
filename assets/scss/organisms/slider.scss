@@ -1,0 +1,115 @@
+.slider
+{
+    width: 100%;
+    height: auto;
+    background-color: $color_slider_blue;
+    padding: 40px 2.5em;
+
+    @media (min-width: 1010px)
+    {
+        padding: 60px 7.5em 75px 7.5em; 
+    }
+
+    &__header
+    {
+        margin-bottom: 32px;
+        position: relative;
+        right: 1em;
+
+        @media (min-width: 1010px)
+        {
+            right: 0;
+        }
+    }
+
+    &__tittle
+    {
+        font-size: 36px;
+        color: $color_tittle_blue;
+        text-transform: uppercase;
+        letter-spacing: 0px;
+        line-height: 42px;
+    }
+
+    &__content
+    {
+        @media (min-width: 1010px)
+        {
+            display: grid;
+            grid-row: 8fr 3fr 4fr 1fr;
+            grid-column: 1fr 1fr 1fr;
+        }
+    }
+
+    &__card
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        @media (min-width:1010px)
+        {
+            width: 30%;
+        }
+    }
+
+    &__card:nth-child(2), &__card:nth-child(3)
+    {
+        display: none;
+
+        @media (min-width: 1010px)
+        {
+            display: block;
+            margin-left: 3em;
+        }
+    }
+
+    &__adjustment
+    {
+
+        width: 100%;
+        height: auto;
+        max-height: 423px;
+        overflow: hidden;
+    }
+
+    &__image
+    {
+        display: inline-block;
+        width: 100%;
+    }
+
+    &__subtittle
+    {
+        font-size: 26px;
+        color: $color_tittle_blue;
+        letter-spacing: -0.36px;
+        line-height: 32px;
+        margin-top: 26px;
+    }
+
+    &__text
+    {
+        display: inline-block;
+        max-height: 93px;
+        overflow: hidden;
+        font-size: 20px;
+        letter-spacing: 0px;
+        line-height: 30px;
+        margin-top: 16px;
+    }
+
+    &__button
+    {
+        align-self: center;
+        margin-top: 16px;
+        padding: .5em 4em;
+        border-radius: 30px;
+        font-size: 20px;
+        color: $color_white;
+        text-transform: uppercase;
+        letter-spacing: -0.36px;
+        line-height: 30px;
+        background-color: $color_dark_orange;
+    }
+}
