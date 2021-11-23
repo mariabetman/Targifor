@@ -1,0 +1,147 @@
+.collapse
+{
+    &__container
+    {
+        width: 95%;
+        margin: auto;
+
+        @media (min-width: 1010px)
+        {
+            width: 85%;
+        }
+    }
+
+    &__tittle
+    {
+        color: $color_tittle_blue;
+        font-size: 36px;
+        letter-spacing: 0;
+        line-height: 42px;
+        text-transform: uppercase;
+        margin: 0 0 40px .5em;
+
+        @media (min-width: 1010px)
+        {
+            font-size: 60px;
+            line-height: 70px;
+            margin: 0 0 40px 0;
+        }
+    }
+
+    &__card
+    {
+        border-radius: 60px;
+        background-color: $color_card_blue;
+        margin-bottom: 20px;
+        height: 115px;
+        overflow: hidden;
+
+        &:hover
+        {
+            height: auto;
+        }
+    }
+
+    &__label
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 115px;
+        padding: 1.5em 1em;
+    }
+
+    &__icon
+    {
+        width: 2.5em;
+
+        @media (min-width: 1010px)
+        {
+            margin-left: 4em;
+        }
+    }
+
+    &__subtittle
+    {
+        width: 70%;
+        font-size: 1.5em;
+        font-weight: 600;
+
+        @media (min-width: 1010px)
+        {
+            width: 75%;
+            font-size: 38px;
+        }
+    }
+
+    &__arrow
+    {
+        width: 30px;
+        height: 30px;
+        border-bottom: 3px solid $color_tittle_blue;
+        border-left: 3px solid $color_tittle_blue;
+        transform: rotateZ(-45deg);
+        margin-right: 1em;
+        position: relative;
+        top: -10px;
+
+        @media (min-width: 1010px)
+        {
+            margin-right: 5em;
+        }
+    }
+
+    &__content
+    {
+        background-color: rgba(100%, 100%, 100%, 0.4);
+        padding: 2em 4em;
+
+        @media (min-width: 1010px)
+        {
+            padding: 3em 8em;
+        }
+    }
+
+    &__text
+    {
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: 30px;
+        margin-bottom: 1em;
+
+        @media (min-width: 1010px)
+        {
+            font-size: 26px;
+            line-height: 36px;
+        }
+    }
+
+    &__tittleL
+    {
+        font-size: 22px;
+        letter-spacing: 0;
+        line-height: 30px;
+        font-weight: 800;
+
+        @media (min-width: 1010px)
+        {
+            font-size: 28px;
+            line-height: 36px;
+        }
+    }
+
+    &__item
+    {
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: 30px;
+        list-style: disc inside;
+        margin: 1em 0 0 .75em;
+
+        @media (min-width: 1010px)
+        {
+            font-size: 28px;
+            line-height: 36px;
+        }
+    }
+}
