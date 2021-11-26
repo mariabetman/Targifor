@@ -1,0 +1,25 @@
+.plus
+{
+    display: inline-block;
+    width: 23px;
+    height: 27px;
+
+    @media (min-width: 1010px)
+    {
+        width: 38px;
+        height: 46px;
+    }
+
+    &__big
+    {
+        display: inline-block;
+        width: 2em;
+        height: 2em;
+
+        @media (min-width: 1010px)
+    {
+        width: 5vw;
+        height: 5vw;
+    }
+    }
+}
