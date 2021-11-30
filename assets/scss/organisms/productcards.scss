@@ -23,7 +23,7 @@
 
     &__tittleM
     {
-        color: $color_tittle_blue;
+        color: $color-tittle-blue;
         font-size: 36px;
         font-weight: 600;
         text-transform: uppercase;
@@ -44,8 +44,8 @@
         justify-content: center;
         align-items: center;
         padding: 23px 1.5em 40px;
-        border: 1px solid $color_border_blue;
-        background-color: $color_cardP_blue;
+        border: 1px solid $color-border-blue;
+        background-color: $color-cardP-blue;
         border-radius: 25px;
         width: 95%;
         margin: 40px auto 0;
@@ -129,21 +129,21 @@
 
         &-blue
         {
-            border: 2px solid $color_tittle_blue;
-            color: $color_tittle_blue;
+            border: 2px solid $color-tittle-blue;
+            color: $color-tittle-blue;
             margin-right: .5em;
         }
 
         &-orange
         {
-            border: 2px solid $color_dark_orange;
-            color: $color_dark_orange;
+            border: 2px solid $color-dark-orange;
+            color: $color-dark-orange;
         }
     }
 
     &__tittle
     {
-        color: $color_tittle_blue;
+        color: $color-tittle-blue;
         font-size: 30px;
         font-weight: 600;
         letter-spacing: 0px;
@@ -166,7 +166,7 @@
         align-items: center;
         width: 85%;
         margin: auto;
-        background-color: $color_dark_orange;
+        background-color: $color-dark-orange;
         padding: .5em;
         border-radius: 55px;
         color: $color_white;
