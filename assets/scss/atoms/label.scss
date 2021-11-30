@@ -1,0 +1,11 @@
+.label
+{
+    transform: skewX(-20deg);
+
+    &__blueD
+    {
+        background-color: $color-tittle-blue;
+        color: $color-white;
+        border-radius: 5px;
+    }
+}
