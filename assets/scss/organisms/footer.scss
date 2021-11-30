@@ -49,6 +49,23 @@
     {
        display: flex;
        flex-direction: column;
+       position: relative;
+       overflow: hidden;
+
+       @media (min-width: 1010px)
+       {
+            &::after
+            {
+                content: "";
+                display: block;
+                width: 1px;
+                height: 550px;
+                background-color: $color-white; 
+                position: absolute;
+                bottom: 0;
+                left: 60%;
+            }
+       }
     }
 
     &__headM
@@ -72,14 +89,8 @@
         {
             display: block;
             width: 60%;
-            border-right: 1.5px solid $color_white;
             background-color: transparent;
         }
-    }
-
-    &__headA
-    {
-        display: none;
     }
 
     &__grid11
@@ -103,6 +114,39 @@
         font-weight: 400;
         text-transform: uppercase;
         position: relative;
+    }
+
+    &__headA
+    {
+        @media (min-width: 1010px)
+        {
+            display: block;
+            width: 40%;
+            background-color: transparent;
+            padding-left: 4.5vw;
+        }
+    }
+
+    &__adjustmentTC
+    {
+        display: flex;
+        align-items: center;
+    }
+
+    &__tittleC
+    {
+        color: $color_white;
+        font-size: .9em;
+        font-weight: 400;
+        text-transform: uppercase;
+
+        &-bold
+        {
+            color: $color_white;
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-right: .4em;
+        }
     }
 
     &__contentM
@@ -138,7 +182,7 @@
            justify-content: flex-start;
            width: 60%;
            height: 100%;
-           border-right: 1.5px solid $color_white;
+           padding: 3em 7.5vw 3em 5vw;
        } 
     }
 
@@ -155,30 +199,6 @@
             padding: 3em 5vw 3em 7.5vw;
         }
     }
-
-    &__adjustmentTC
-    {
-        display: flex;
-        align-items: center;
-    }
-
-    &__tittleC
-    {
-        color: $color_white;
-        font-size: .9em;
-        font-weight: 400;
-        text-transform: uppercase;
-
-        &-bold
-        {
-            color: $color_white;
-            font-size: 1.5em;
-            font-weight: 700;
-            margin-right: .4em;
-        }
-    }
-
-
 
     &__item12
     {
