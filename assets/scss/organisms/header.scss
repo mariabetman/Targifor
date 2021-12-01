@@ -76,7 +76,7 @@
         width: 65px;
         height: 42.5px;
         margin-right: 1.4em;
-        background-color: $color_dark_orange;
+        background-color: $color-dark-orange;
         border-radius: 6px;
 
         @media (min-width: 1010px)
@@ -90,7 +90,7 @@
             display: block;
             width: 40px;
             height: 3px;
-            background-color: $color_white;
+            background-color: $color-white;
             border-radius: 10em;
             position: relative;
             bottom: 0.15em;
@@ -107,7 +107,7 @@
             display: block;
             width: 40px;
             height: 3px;
-            background-color: $color_white;
+            background-color: $color-white;
             border-radius: 10em;
             position: relative;
             top: 0.15em;
@@ -123,7 +123,7 @@
     {
         width: 40px;
         height: 3px;
-        background-color: $color_white;
+        background-color: $color-white;
         border-radius: 10em;
 
         @media (min-width: 1010px)
