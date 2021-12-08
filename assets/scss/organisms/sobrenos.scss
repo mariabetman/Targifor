@@ -10,7 +10,7 @@
         width: 90%;
         margin: 40px auto 92px;
 
-        @media (min-width:1010px)
+        @media (min-width:1400px)
         {
             width: 100%;
             flex-direction: row;
@@ -21,7 +21,7 @@
 
     &__content
     {
-        @media (min-width: 1010px)
+        @media (min-width: 1400px)
         {
             width: 55%;
         }
