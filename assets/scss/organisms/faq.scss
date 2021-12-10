@@ -10,7 +10,7 @@
 
     &__tittle
     {
-        color: $color_label_blueD;
+        color: $color-tittle-blue;
         text-transform: uppercase;
         font-size: 36px;
         letter-spacing: 0;
@@ -50,13 +50,13 @@
 
     &__border
     {
-        border-left: 3px solid $color_dark_orange;
+        border-left: 3px solid $color-dark-orange;
         padding-left: 1.5em;
     }
 
     &__cardT
     {
-        color: $color_follow_blue;
+        color: $color-follow-blue;
         text-transform: uppercase;
         font-size: 20px;
         font-weight: 400;

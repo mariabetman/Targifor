@@ -13,7 +13,7 @@
 
     &__tittle
     {
-        color: $color_tittle_blue;
+        color: $color-tittle-blue;
         font-size: 36px;
         letter-spacing: 0;
         line-height: 42px;
@@ -31,7 +31,7 @@
     &__card
     {
         border-radius: 60px;
-        background-color: $color_card_blue;
+        background-color: $color-card-blue;
         margin-bottom: 20px;
         height: 115px;
         overflow: hidden;
@@ -81,8 +81,8 @@
     {
         width: 30px;
         height: 30px;
-        border-bottom: 3px solid $color_tittle_blue;
-        border-left: 3px solid $color_tittle_blue;
+        border-bottom: 3px solid $color-tittle-blue;
+        border-left: 3px solid $color-tittle-blue;
         transform: rotateZ(-45deg);
         margin-right: 1em;
         position: relative;

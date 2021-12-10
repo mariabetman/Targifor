@@ -2,7 +2,7 @@
 {
     width: 100%;
     height: auto;
-    background-color: $color_slider_blue;
+    background-color: $color-slider-blue;
     padding: 40px 10%;
     position: relative;
 
@@ -121,7 +121,7 @@
     &__subtittle
     {
         font-size: 26px;
-        color: $color_tittle_blue;
+        color: $color-tittle-blue;
         letter-spacing: -0.36px;
         line-height: 32px;
         margin-top: 26px;
@@ -160,7 +160,7 @@
         text-transform: uppercase;
         letter-spacing: -0.36px;
         line-height: 30px;
-        background-color: $color_dark_orange;
+        background-color: $color-dark-orange;
 
         @media (min-width:1010px)
         {

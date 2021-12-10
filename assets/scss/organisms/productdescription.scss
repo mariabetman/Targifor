@@ -12,7 +12,7 @@
     &__tittle
     {
         font-size: 36px;
-        color: $color_tittle_blue;
+        color: $color-tittle-blue;
         text-transform: uppercase;
         letter-spacing: 0;
         line-height: 42px;
@@ -32,7 +32,7 @@
         justify-content: flex-end;
         align-items: center;
         width: 100%;
-        background-color: $color_card_blue;
+        background-color: $color-card-blue;
         padding: .4em .75em;
         transform: skewX(-20deg);
         border-top-right-radius: 7.5px;
@@ -50,7 +50,7 @@
         justify-content: flex-end;
         align-items: center;
         width: 100%;
-        background-color: $color_light_orange;
+        background-color: $color-light-orange;
         padding: .4em .75em;
         margin-top: 60px;
         transform: skewX(-20deg);

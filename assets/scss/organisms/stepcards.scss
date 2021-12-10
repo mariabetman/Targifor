@@ -12,7 +12,7 @@
     {
         width: 100%;
         font-size: 36px;
-        color: $color_label_blueD;
+        color: $color-tittle-blue;
         text-transform: uppercase;
         letter-spacing: 0;
         line-height: 42px;
@@ -53,8 +53,8 @@
             display: inline-block;
             width: 50px;
             height: 50px;
-            border-bottom: 7.5px solid $color_arrow_orange;
-            border-right: 7.5px solid $color_arrow_orange;
+            border-bottom: 7.5px solid $color-medium-orange;
+            border-right: 7.5px solid $color-medium-orange;
             transform: rotate(45deg);
             position: absolute;
             bottom: -20px;
