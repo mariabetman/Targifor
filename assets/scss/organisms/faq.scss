@@ -1,11 +1,11 @@
 .faq
 {
     width: 100%;
-    margin: 93px 0 60px 0;
+    margin: 93px auto 0;
 
     @media (min-width: 1010px)
     {
-        margin: 140px 0;
+        margin: 140px auto 0;
     }
 
     &__tittle
@@ -16,7 +16,7 @@
         letter-spacing: 0;
         line-height: 42px;
         text-align: left;
-        padding: 0 1em 0 .5em;
+        padding: 0 1em 0 .15em;
 
         @media (min-width: 1010px)
         {
@@ -38,12 +38,12 @@
 
     &__card
     {
-        width: 70%;
-        margin: 40px 2em 0 3em;
+        width: 90%;
+        margin: 40px auto 0;
 
         @media (min-width: 1010px) 
         {
-            width: 30%;
+            width: 50%;
             margin: 80px 2em 0 7em;;
         }
     }
