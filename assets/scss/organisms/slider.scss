@@ -3,12 +3,14 @@
     width: 100%;
     height: auto;
     background-color: $color-slider-blue;
-    padding: 40px 10%;
+    padding: 40px 12.5%;
+    margin-top: 60px;
     position: relative;
 
     @media (min-width: 1010px)
     {
-        padding: 60px 7.5em 75px 7.5em; 
+        padding: 60px 0 75px; 
+        margin-top: 102px;
     }
 
     &__header
@@ -20,6 +22,7 @@
         @media (min-width: 1010px)
         {
             right: 0;
+            margin-left: 10%;
         }
     }
 
@@ -40,7 +43,7 @@
 
         @media (min-width: 1010px)
         {
-            top: 50%;
+            top: 40%;
         }
     }
 
@@ -48,11 +51,12 @@
     {
         width: 1.75em;
         position: relative;
-        left: 1em;
+        left: 0.15em;
 
         @media (min-width: 1010px)
         {
             width: 3em;
+            left: .75em;
         }
     }
 
@@ -60,11 +64,12 @@
     {
         width: 1.75em;
         position: relative;
-        right: 1em;
+        right: 0.15em;
 
         @media (min-width: 1010px)
         {
             width: 3em;
+            right: .75em;
         }
     }
 
@@ -72,12 +77,13 @@
     {
         width: 100%;
         display: flex;
-        justify-content: space-between;
         align-items: flex-start;
+        margin: auto;
 
         @media (min-width: 1010px)
         {
-            margin-top: 60px;
+            width: 80%;
+            margin: 60px auto 0;
         }
     }
 
@@ -87,13 +93,16 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-
-        @media (min-width:1010px)
+    
+        &-1
         {
-            display: grid;
-            grid-template-rows: auto 6fr 2fr 1fr;
-            row-gap: 20px;
-            width: 30%;
+            @media (min-width:1010px)
+            {
+                display: grid;
+                grid-template-rows: auto 6fr 2fr 1fr;
+                row-gap: 20px;
+                width: 30%;
+            }
         }
 
         &-2,
@@ -107,6 +116,7 @@
                 grid-template-rows: auto 6fr 2fr 1fr;
                 row-gap: 20px;
                 width: 30%;
+                margin-left: 5%;
             }
         }
     }
@@ -128,10 +138,10 @@
 
         @media (min-width: 1010px)
         {
-            margin-top: 0;
             font-size: 48px;
             letter-spacing: -0.67px;
             line-height: 63px;
+            margin-top: 0;
         }
     }
 

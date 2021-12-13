@@ -4,7 +4,7 @@
 
     &__card
     {
-        width: 80%;
+        width: 100%;
         height: auto;
         border-radius: 11px;
         padding: 28px 0 40px;
@@ -23,6 +23,7 @@
     &__card-1
     {
         background-color: $color-card-orange;
+        margin-top: 92px;
 
         @media (min-width: 1010px)
         {

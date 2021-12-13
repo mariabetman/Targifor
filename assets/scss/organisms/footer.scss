@@ -110,10 +110,18 @@
     &__item11
     {
         color: $color-white;
-        font-size: .9em;
+        font-size: 1.1em;
         font-weight: 400;
         text-transform: uppercase;
         position: relative;
+    }
+
+    &__detail11
+    {
+        display: block;
+        width: 2px;
+        height: 25px;
+        background-color: $color-white;
     }
 
     &__headA
@@ -138,7 +146,7 @@
     &__tittleC
     {
         color: $color-white;
-        font-size: .9em;
+        font-size: 1.1em;
         font-weight: 400;
         text-transform: uppercase;
 
