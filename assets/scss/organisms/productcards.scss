@@ -1,40 +1,17 @@
 .productcards
 {
     width: 100%;
-    padding: 60px 0;
-
+    margin-top: 60px;
 
     @media (min-width: 1010px) 
     {
-        padding: 140px 0 102px; 
+        margin-top: 140px; 
     }
 
-    &__adjustment1
-    {
-        width: 95%;
-        margin: auto;
-
-        @media (min-width: 1010px)
-        {
-            width: 85%;
-            margin-bottom: 40px;
-        }
-    }
-
-    &__tittleM
+    &__tittle
     {
         color: $color-tittle-blue;
-        font-size: 36px;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 0px;
-        line-height: 42px;
-
-        @media (min-width: 1010px)
-        {
-            font-size: 60px;
-            line-height: 70px;
-        }
+        @include tittle;
     }
 
     &__card
@@ -43,32 +20,25 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 23px 1.5em 40px;
+        padding: 3em 1.5em;
         border: 1px solid $color-border-blue;
         background-color: $color-cardP-blue;
         border-radius: 25px;
-        width: 95%;
-        margin: 40px auto 0;
+        margin-top: 40px;
 
         @media (min-width: 1010px)
         {
             flex-direction: row;
-            padding: 40px 0;
-            border-radius: 15px;
-            width: 85%;
-            margin: 40px auto 0;
+            justify-content: flex-end;
+            padding: 2.5em;
         }
-    }
 
-    &__decoration
-    {
-        @media (min-width: 1010px)
+        &:nth-child(2)
         {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 50%;
-            padding-left: 3.5em;
+            @media (min-width: 1010px)
+            {
+                margin-top: 80px;
+            }
         }
     }
 
@@ -88,7 +58,7 @@
         {
             @media (min-width: 1010px)
             {
-                width: 40%;
+                width: 15em;
             }
         }
 
@@ -96,7 +66,7 @@
         {
             @media (min-width: 1010px)
             {
-                width: 60%;
+                width: 20em;
             }
         }
 
@@ -104,7 +74,7 @@
         {
             @media (min-width: 1010px)
             {
-                width: 80%;
+                width: 25em;
             }
         }
     }
@@ -113,50 +83,77 @@
     {
         @media (min-width: 1010px)
         {
-            width: 50%;
-            padding-right: 7.5em;
+            display: flex;   
+            flex-direction: column; 
+            width: 40%;
+            margin: 0 7.5% 0 7.5%;
         }
     }
 
-    &__tag
+    &__adjustmentL
+    {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    &__label
     {
         display: inline-block;
-        padding: .5em 2.5em;
-        border-radius: 55px;
         font-size: 14px;
         font-weight: 600;
-        margin-bottom: 16px;
+        padding: .25em 1.5em;
+        margin-right: .75em;
+        margin-bottom: 15px;
 
         &-blue
         {
-            border: 2px solid $color-tittle-blue;
             color: $color-tittle-blue;
-            margin-right: .5em;
+            border: 2px solid $color-tittle-blue;
+            border-radius: 25px;
         }
 
         &-orange
         {
-            border: 2px solid $color-dark-orange;
             color: $color-dark-orange;
+            border: 2px solid $color-dark-orange;
+            border-radius: 25px;
+        }
+
+        @media (min-width: 1010px)
+        {
+            font-size: 18px;
+            font-weight: 700;
+            padding: .5em 1.75em;
+            margin-bottom: 23px;
         }
     }
 
-    &__tittle
+    &__subtittle
     {
         color: $color-tittle-blue;
         font-size: 30px;
-        font-weight: 600;
-        letter-spacing: 0px;
+        letter-spacing: 0;
         line-height: 35px;
         margin-bottom: 10px;
+
+        @media (min-width: 1010px)
+        {
+            font-size: 46px;
+            line-height: 53px;
+            margin-bottom: 20px;
+        }
     }
 
     &__text
     {
-        font-size: 16px;
-        letter-spacing: 0px;
-        line-height: 22px;
+        @include text;
         margin-bottom: 32px;
+
+        @media (min-width: 1010px)
+        {
+            margin-bottom: 40px;
+        }
     }
 
     &__button
@@ -164,20 +161,21 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 85%;
         margin: auto;
+        width: 85%;
         background-color: $color-dark-orange;
-        padding: .5em;
+        padding: 1em;
         border-radius: 55px;
         color: $color_white;
-        font-size: 14px;
+        font-size: 20px;
         text-transform: uppercase;
 
         @media (min-width: 1010px)
         {
-            width: 40%;
             margin: 0;
+            width: 60%;
             padding: 1em;
+            font-size: 22px;
         }
     }
 

@@ -97,12 +97,17 @@
         &::after
         {
             content: "";
-            display: inline-block;
-            width: 30px;
-            height: 30px;
-            border-bottom: 5px solid $color-medium-orange;
-            border-right: 5px solid $color-medium-orange;
-            transform: rotate(-45deg);
+            display: none;
+
+            @media (min-width: 1010px)
+            {
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                border-bottom: 5px solid $color-medium-orange;
+                border-right: 5px solid $color-medium-orange;
+                transform: rotate(-45deg);
+            }
         }
     }
 
