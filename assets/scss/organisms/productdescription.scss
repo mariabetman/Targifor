@@ -78,7 +78,7 @@
             justify-content: flex-start;
             align-items: center;
             width: 100%;
-            margin: 70px 0 80px;
+            margin: 70px 0 0;
         }
     }
 
@@ -105,7 +105,7 @@
             margin: 0;
         }
             
-        &-1,
+        &-1
         {
             width: 15em;
             margin: 40px 0 20px;
@@ -141,11 +141,6 @@
         &-small
         {
             @include text-small;
-
-            @media (min-width: 1010px)
-            {
-               
-            }
         }
     }
 

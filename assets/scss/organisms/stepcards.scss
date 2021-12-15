@@ -11,41 +11,64 @@
     &__tittle
     {
         width: 100%;
-        font-size: 36px;
+        @include tittle;
         color: $color-tittle-blue;
-        text-transform: uppercase;
-        letter-spacing: 0;
-        line-height: 42px;
-        padding: 0 5em 0 4vw;
+        padding: 0 3em 0 0;
 
         @media (min-width: 1010px)
         {
-            font-size: 60px;
-            line-height: 70px;
-            padding: 0 5em 0 2.25em;
+            padding: 0;
+            margin-bottom: 120px;
         }
     }
 
     &__adjustment
     {
+        display: flex;
+        flex-direction: column;
+
         @media (min-width: 1010px)
         {
-            display: flex;
-            justify-content: space-around;
+            flex-direction: row;
+            justify-content: space-between;
             align-items: center;
-            width: 90%;
-            margin: auto;
         }
     }
 
     &__card
     {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         width: 100%;
-        padding: 40px 24px 62px 7.5vw;
         position: relative;
+
+        &:nth-child(2),
+        &:nth-child(3)
+        {
+            margin-top: 140px;
+
+            @media (min-width: 1010px) 
+            {
+                margin-top: 0;
+            }
+        }
+
+        @media (min-width: 1010px)
+        {
+            width: 30%;
+            padding: 0;
+            align-items: flex-start;
+        }
+    }
+
+    &__adjustmentA
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: -75px;
 
         &::after
         {
@@ -56,8 +79,6 @@
             border-bottom: 7.5px solid $color-medium-orange;
             border-right: 7.5px solid $color-medium-orange;
             transform: rotate(45deg);
-            position: absolute;
-            bottom: -20px;
 
             @media (min-width: 1010px)
             {
@@ -65,48 +86,60 @@
             }
         }
 
-        &:last-child
+        @media (min-width: 1010px)
         {
-            &::after
-            {
-                content: "";
-                display: none;
-            }
+            position: relative;
         }
+    }
+
+    &__arrow
+    {
+        &::after
+        {
+            content: "";
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border-bottom: 5px solid $color-medium-orange;
+            border-right: 5px solid $color-medium-orange;
+            transform: rotate(-45deg);
+        }
+    }
+
+    &__adjustmentN
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         @media (min-width: 1010px)
         {
-            width: 30%;
-            padding: 0;
+            align-items: flex-start;
         }
     }
 
     &__textN
     {
-        display: inline-block;
-        font-size: 250px;
-        font-weight: 600;
+        font-size: 225px;
+        font-weight: 500;
         color: #77C9EF;
-        margin-right: .25em;
 
         @media (min-width:1010px)
         {
-            margin-right: 0.1em;
+            font-size: 300px;
+            font-weight: 500;
         }
     }
 
     &__text
     {
-        display: inline-block;
-        width: 60%;
-        font-size: 22px;
-        font-weight: 600;
-        line-height: 28px;
-        margin-left: .25em;
+        @include text-bold;
+        float: left;
+        margin-left: 1em;
 
         @media (min-width: 1010px)
         {
-            width: 100%;
+            margin-left: .5em;
         }
     }
 }
